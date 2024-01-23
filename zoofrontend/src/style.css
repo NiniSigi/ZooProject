@@ -1,0 +1,13 @@
+/* Aendere die Farbe aller Links in der Anwendung zu schwarz und entferne die Unterstreichung */
+a {
+    color: rgb(0, 0, 0); /* Schwarz */
+    text-decoration: none; /* Keine Unterstreichung */
+  }
+  
+  /* Aendere die Groesse der SVG-Icons */
+  .bi {
+    width: 32px; /* oder eine andere Groesse nach Wunsch */
+    height: 32px; /* muss der Breite entsprechen, um das Aspect Ratio zu erhalten */
+    margin-bottom: 4px; /* Abstand nach unten */
+  }
+  
