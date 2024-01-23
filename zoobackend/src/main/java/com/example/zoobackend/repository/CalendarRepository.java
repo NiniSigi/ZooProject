@@ -11,8 +11,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CalendarRepository {
     private final JdbcTemplate jdbcTemplate;
-    private final KeyHolderFactory keyHolderFactory;
-
     public List<CalendarModel> getAllCalendarModel() {
         String sql = "SELECT * FROM calendar";
         return jdbcTemplate.query(sql, (rs, rowNum) -> {
