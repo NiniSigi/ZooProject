@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
-import EventTable from './EventTable.js'; // Stelle sicher, dass EventTable im richtigen Verzeichnis ist
-import { initialEvents, sortEvents } from './utils'; // Stelle sicher, dass diese Funktionen verfügbar sind
+import React, { useState, useEffect } from 'react';
+import EventTable from './EventTable.js';
 
 const EventCalendar = () => {
-  const [events, setEvents] = useState(initialEvents);
-  const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
+  const [events, setEvents] = useState([]);
   const [selectedDate, setSelectedDate] = useState('');
 
-  const handleSort = (key) => {
-    setEvents(sortEvents(events, key, sortConfig, setSortConfig));
-  };
+  useEffect(() => {
+    fetch('/api/zoo/calendar')
+      .then(response => response.json())
+      .then(data => setEvents(data))
+      .catch(error => console.error('Error fetching data: ', error));
+  }, []);
 
   const filteredEvents = selectedDate
-    ? events.filter(event => event.datum === selectedDate)
+    ? events.filter(event => new Date(event.eventDate).toLocaleDateString() === selectedDate)
     : events;
 
   return (
@@ -27,7 +28,7 @@ const EventCalendar = () => {
           onChange={e => setSelectedDate(e.target.value)} 
         />
       </div>
-      <EventTable events={filteredEvents} onSort={handleSort} />
+      <EventTable events={filteredEvents} />
     </div>
   );
 };

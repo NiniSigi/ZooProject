@@ -10,13 +10,9 @@ VALUES ('Affenschau', '2024-07-12 13:15:00', 'Familien', '13:15 - 14:15'),
        ('Kinderzirkus mit Tieren', '2025-03-20 10:30:00', 'Kinder', '10:30 - 12:30'),
        ('Elefantenpflege-Workshop', '2025-04-14 09:00:00', 'Besucher', '09:00 - 11:00');
 INSERT INTO ANIMALINFO (animalType, description)
-VALUES ('Lion', 'Large carnivorous feline found in grasslands and savannas.'),
-       ('Penguin', 'Flightless bird with distinctive black and white plumage.'),
-       ('Elephant', 'Giant mammal known for its long trunk and large ears.'),
-       ('Giraffe', 'Tall herbivorous mammal with a long neck and distinctive spotted coat.'),
-       ('Koala', 'Tree-dwelling marsupial native to Australia, known for its cuddly appearance.'),
-       ('Snake', 'Legless reptile with a long, flexible body and no eyelids.'),
-       ('Dolphin', 'Marine mammal known for its playful behavior and high intelligence.'),
-       ('Tiger', 'Large cat species with a distinctive orange coat and black stripes.'),
-       ('Monkey', 'Primate known for its agility, intelligence, and opposable thumbs.'),
-       ('Hippopotamus', 'Large herbivorous mammal with a barrel-shaped body and semiaquatic lifestyle.');
+VALUES ('Löwe', 'Der majestätische Löwe, bekannt als der "König der Tiere", ist ein Symbol für Stärke und Mut. Löwen leben in der afrikanischen Savanne und sind für ihre beeindruckende Mähne und ihr kraftvolles Brüllen bekannt.'),
+       ('Pinguin', 'Pinguine sind charismatische Vögel, die nicht fliegen können, aber ausgezeichnete Schwimmer sind. Sie leben hauptsächlich in der Antarktis und sind bekannt für ihre soziale Struktur und ihr spielerisches Verhalten im Wasser.'),
+       ('Elefant', 'Elefanten, die größten Landtiere der Welt, sind für ihre Intelligenz, ihr soziales Verhalten und ihren markanten langen Rüssel bekannt. Sie spielen eine wichtige Rolle in ihrem Ökosystem, indem sie Wege für andere Tiere in dichten Wäldern bahnen.'),
+       ('Giraffe', 'Giraffen sind die höchsten Tiere der Welt und berühmt für ihren langen Hals und ihre einzigartigen Fleckenmuster. Sie ernähren sich hauptsächlich von den Blättern hoher Bäume, die für andere Tiere unerreichbar sind.'),
+       ('Koala', 'Koalas sind ein ikonisches Symbol Australiens. Diese baumlebenden Beuteltiere verbringen den Großteil ihres Lebens mit Schlafen und Fressen von Eukalyptusblättern, die eine wichtige Energiequelle für sie darstellen.'),
+       ('Tiger', 'Tiger sind die größten Katzenarten der Welt, bekannt für ihr charakteristisches orangefarbenes Fell mit schwarzen Streifen. Jeder Tiger hat ein einzigartiges Streifenmuster, ähnlich wie menschliche Fingerabdrücke.');

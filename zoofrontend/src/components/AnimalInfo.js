@@ -1,16 +1,15 @@
-import React from 'react';
-
-// Erweiterte Daten für die Tierinformationen
-const animals = [
-  { animalType: "Löwe", description: "Der majestätische Löwe, bekannt als der 'König der Tiere', ist ein Symbol für Stärke und Mut. Löwen leben in der afrikanischen Savanne und sind für ihre beeindruckende Mähne und ihr kraftvolles Brüllen bekannt.", image: "/animals/loewe.png" },
-  { animalType: "Elefant", description: "Elefanten, die größten Landtiere der Welt, sind für ihre Intelligenz, ihr soziales Verhalten und ihren markanten langen Rüssel bekannt. Sie spielen eine wichtige Rolle in ihrem Ökosystem, indem sie Wege für andere Tiere in dichten Wäldern bahnen.", image: "/animals/elefant.png" },
-  { animalType: "Giraffe", description: "Giraffen sind die höchsten Tiere der Welt und berühmt für ihren langen Hals und ihre einzigartigen Fleckenmuster. Sie ernähren sich hauptsächlich von den Blättern hoher Bäume, die für andere Tiere unerreichbar sind.", image: "./animals/giraffe.png" },
-  { animalType: "Pinguin", description: "Pinguine sind charismatische Vögel, die nicht fliegen können, aber ausgezeichnete Schwimmer sind. Sie leben hauptsächlich in der Antarktis und sind bekannt für ihre soziale Struktur und ihr spielerisches Verhalten im Wasser.", image: "/animals/pinguin.png" },
-  { animalType: "Koala", description: "Koalas sind ein ikonisches Symbol Australiens. Diese baumlebenden Beuteltiere verbringen den Großteil ihres Lebens mit Schlafen und Fressen von Eukalyptusblättern, die eine wichtige Energiequelle für sie darstellen.", image: "/animals/koala.png" },
-  { animalType: "Tiger", description: "Tiger sind die größten Katzenarten der Welt, bekannt für ihr charakteristisches orangefarbenes Fell mit schwarzen Streifen. Jeder Tiger hat ein einzigartiges Streifenmuster, ähnlich wie menschliche Fingerabdrücke.", image: "/animals/tiger.png" },
-];
+import React, { useState, useEffect } from 'react';
 
 const AnimalInfo = () => {
+  const [animals, setAnimals] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/zoo/animalInfo')
+      .then(response => response.json())
+      .then(data => setAnimals(data))
+      .catch(error => console.error('Error fetching data: ', error));
+  }, []);
+
   return (
     <div className="container mt-5">
       <h1>Entdecke unsere Tiere</h1>

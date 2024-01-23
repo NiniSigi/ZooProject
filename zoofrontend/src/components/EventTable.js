@@ -1,23 +1,23 @@
 import React from 'react';
 
-function EventTable({ events, onSort }) {
+function EventTable({ events }) {
   return (
     <table className="table table-hover">
       <thead className="table-light">
         <tr>
           <th>Event</th>
-          <th style={{ cursor: 'pointer' }} onClick={() => onSort('zeit')}>Zeit</th>
-          <th style={{ cursor: 'pointer' }} onClick={() => onSort('zielgruppe')}>Zielgruppe</th>
+          <th>Zeit</th>
+          <th>Zielgruppe</th>
           <th>Datum</th>
         </tr>
       </thead>
       <tbody>
         {events.map((event, index) => (
           <tr key={index}>
-            <td>{event.name}</td>
-            <td>{event.zeit}</td>
-            <td>{event.zielgruppe}</td>
-            <td>{event.datum}</td>
+            <td>{event.eventName}</td> 
+            <td>{event.time}</td>      
+            <td>{event.targetGroup}</td> 
+            <td>{new Date(event.date).toLocaleDateString()}</td> 
           </tr>
         ))}
       </tbody>
