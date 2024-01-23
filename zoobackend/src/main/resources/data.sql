@@ -9,10 +9,11 @@ VALUES ('Affenschau', '2024-07-12 13:15:00', 'Familien', '13:15 - 14:15'),
        ('Hai-Tunnel-Tauchen', '2025-02-28 16:45:00', 'Besucher', '16:45 - 17:45'),
        ('Kinderzirkus mit Tieren', '2025-03-20 10:30:00', 'Kinder', '10:30 - 12:30'),
        ('Elefantenpflege-Workshop', '2025-04-14 09:00:00', 'Besucher', '09:00 - 11:00');
-INSERT INTO ANIMALINFO (animalType, description)
-VALUES ('Löwe', 'Der majestätische Löwe, bekannt als der "König der Tiere", ist ein Symbol für Stärke und Mut. Löwen leben in der afrikanischen Savanne und sind für ihre beeindruckende Mähne und ihr kraftvolles Brüllen bekannt.'),
-       ('Pinguin', 'Pinguine sind charismatische Vögel, die nicht fliegen können, aber ausgezeichnete Schwimmer sind. Sie leben hauptsächlich in der Antarktis und sind bekannt für ihre soziale Struktur und ihr spielerisches Verhalten im Wasser.'),
-       ('Elefant', 'Elefanten, die größten Landtiere der Welt, sind für ihre Intelligenz, ihr soziales Verhalten und ihren markanten langen Rüssel bekannt. Sie spielen eine wichtige Rolle in ihrem Ökosystem, indem sie Wege für andere Tiere in dichten Wäldern bahnen.'),
-       ('Giraffe', 'Giraffen sind die höchsten Tiere der Welt und berühmt für ihren langen Hals und ihre einzigartigen Fleckenmuster. Sie ernähren sich hauptsächlich von den Blättern hoher Bäume, die für andere Tiere unerreichbar sind.'),
-       ('Koala', 'Koalas sind ein ikonisches Symbol Australiens. Diese baumlebenden Beuteltiere verbringen den Großteil ihres Lebens mit Schlafen und Fressen von Eukalyptusblättern, die eine wichtige Energiequelle für sie darstellen.'),
-       ('Tiger', 'Tiger sind die größten Katzenarten der Welt, bekannt für ihr charakteristisches orangefarbenes Fell mit schwarzen Streifen. Jeder Tiger hat ein einzigartiges Streifenmuster, ähnlich wie menschliche Fingerabdrücke.');
+INSERT INTO ANIMALINFO (animalType, description, image)
+VALUES
+    ('Loewe', 'Der majestaetische Loewe, bekannt als der "Koenig der Tiere", ist ein Symbol fuer Staerke und Mut. Loewen leben in der afrikanischen Savanne und sind fuer ihre beeindruckende Maehne und ihr kraftvolles Bruellen bekannt.', '/animals/loewe.png'),
+    ('Pinguin', 'Pinguine sind charismatische Voegel, die nicht fliegen koennen, aber ausgezeichnete Schwimmer sind. Sie leben hauptsaechlich in der Antarktis und sind bekannt fuer ihre soziale Struktur und ihr spielerisches Verhalten im Wasser.', '/animals/pinguin.png'),
+    ('Elefant', 'Elefanten, die groessten Landtiere der Welt, sind fuer ihre Intelligenz, ihr soziales Verhalten und ihren markanten langen Ruessel bekannt. Sie spielen eine wichtige Rolle in ihrem Oekosystem, indem sie Wege fuer andere Tiere in dichten Waeldern bahnen.', '/animals/elefant.png'),
+    ('Giraffe', 'Giraffen sind die hoechsten Tiere der Welt und beruehmt fuer ihren langen Hals und ihre einzigartigen Fleckenmuster. Sie ernaehren sich hauptsaechlich von den Blaettern hoher Baeume, die fuer andere Tiere unerreichbar sind.', '/animals/giraffe.png'),
+    ('Koala', 'Koalas sind ein ikonisches Symbol Australiens. Diese baumlebenden Beuteltiere verbringen den Groessteil ihres Lebens mit Schlafen und Fressen von Eukalyptusblaettern, die eine wichtige Energiequelle fuer sie darstellen.', '/animals/koala.png'),
+    ('Tiger', 'Tiger sind die groessten Katzenarten der Welt, bekannt fuer ihr charakteristisches orangefarbenes Fell mit schwarzen Streifen. Jeder Tiger hat ein einzigartiges Streifenmuster, aehnlich wie menschliche Fingerabdruecke.', '/animals/tiger.png');

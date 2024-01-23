@@ -9,4 +9,5 @@ public class AnimalModel {
     private Long id;
     private String animalType;
     private String description;
+    private String image;
 }

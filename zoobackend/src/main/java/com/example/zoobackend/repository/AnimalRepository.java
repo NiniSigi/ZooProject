@@ -19,6 +19,7 @@ public class AnimalRepository {
             animalModel.setId(rs.getLong("id"));
             animalModel.setAnimalType(rs.getString("animalType"));
             animalModel.setDescription(rs.getString("description"));
+            animalModel.setImage(rs.getString("image"));
             return animalModel;
         });
     }

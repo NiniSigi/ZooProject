@@ -10,9 +10,6 @@
         <module name="zoobackend" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="zoobackend" target="18" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

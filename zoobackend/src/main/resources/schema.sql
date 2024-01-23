@@ -11,5 +11,6 @@ CREATE TABLE animalInfo
 (
     id          BIGINT PRIMARY KEY NOT NULL UNIQUE AUTO_INCREMENT,
     animalType  VARCHAR(100)    NOT NULL,
-    description TEXT            NOT NULL
+    description TEXT            NOT NULL,
+    image       TEXT            NOT NULL
 );

@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ZooProject.iml" filepath="$PROJECT_DIR$/.idea/ZooProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zoobackend/zoobackend.iml" filepath="$PROJECT_DIR$/zoobackend/zoobackend.iml" />
       <module fileurl="file://$PROJECT_DIR$/zoofrontend.iml" filepath="$PROJECT_DIR$/zoofrontend.iml" />
     </modules>
   </component>

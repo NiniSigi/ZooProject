@@ -6,14 +6,22 @@ const EventCalendar = () => {
   const [selectedDate, setSelectedDate] = useState('');
 
   useEffect(() => {
-    fetch('/api/zoo/calendar')
+    fetch('http://localhost:8080/api/zoo/calendar')
       .then(response => response.json())
       .then(data => setEvents(data))
       .catch(error => console.error('Error fetching data: ', error));
   }, []);
 
+  const formatDate = (date) => {
+    const d = new Date(date);
+    const year = d.getFullYear();
+    const month = `${d.getMonth() + 1}`.padStart(2, '0');
+    const day = `${d.getDate()}`.padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  };
+
   const filteredEvents = selectedDate
-    ? events.filter(event => new Date(event.eventDate).toLocaleDateString() === selectedDate)
+    ? events.filter(event => formatDate(event.date) === selectedDate)
     : events;
 
   return (
@@ -25,6 +33,7 @@ const EventCalendar = () => {
           type="date" 
           className="form-control" 
           id="datePicker" 
+          value={selectedDate}
           onChange={e => setSelectedDate(e.target.value)} 
         />
       </div>

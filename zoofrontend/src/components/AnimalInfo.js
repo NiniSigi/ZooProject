@@ -4,7 +4,7 @@ const AnimalInfo = () => {
   const [animals, setAnimals] = useState([]);
 
   useEffect(() => {
-    fetch('/api/zoo/animalInfo')
+    fetch('http://localhost:8080/api/zoo/animalInfo')
       .then(response => response.json())
       .then(data => setAnimals(data))
       .catch(error => console.error('Error fetching data: ', error));
