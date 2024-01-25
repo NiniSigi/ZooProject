@@ -10,6 +10,17 @@ import AnimalInfo from './components/AnimalInfo';
 import Login from './components/Login';
 import './style.css';
 
+const Footer = () => {
+  return (
+    <div className="footer bg-dark text-light text-center py-3">
+      <p>Folgt uns doch gerne auf Social Media:</p>
+      <a href="https://www.facebook.com" className="text-light mx-2">Facebook</a>|
+      <a href="https://www.twitter.com" className="text-light mx-2">Twitter</a>|
+      <a href="https://www.instagram.com" className="text-light mx-2">Instagram</a>
+    </div>
+  );
+};
+
 const App = () => {
   return (
     <Router>
@@ -72,6 +83,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 };

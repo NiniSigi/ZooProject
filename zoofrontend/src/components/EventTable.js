@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 function EventTable({ events }) {
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
 

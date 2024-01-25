@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import BuyTicket from './BuyTicket';
+import BuyTicket from '/BuyTicket';
 
 test('Tickettyp auswählen und Name eingeben', () => {
   render(<BuyTicket />);
