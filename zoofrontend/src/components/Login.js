@@ -17,7 +17,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username === 'testUser' && password === 'IdmEia=0dsfjewe') {
+    if (username === 'Gino Paganini' && password === '1234') {
       localStorage.setItem('username', username);
       setIsLoggedIn(true);
       navigate('/'); // Weiterleitung zur Hauptseite nach dem Login

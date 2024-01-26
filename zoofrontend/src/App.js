@@ -13,10 +13,23 @@ import './style.css';
 const Footer = () => {
   return (
     <div className="footer bg-dark text-light text-center py-3">
-      <p>Folgt uns doch gerne auf Social Media:</p>
-      <a href="https://www.facebook.com" className="text-light mx-2">Facebook</a>|
-      <a href="https://www.twitter.com" className="text-light mx-2">Twitter</a>|
-      <a href="https://www.instagram.com" className="text-light mx-2">Instagram</a>
+      <div className="container">
+        <div className="row">
+          {/* Linke Spalte für Social Media */}
+          <div className="col-md-6">
+            <p>Folgt uns doch gerne auf Social Media:</p>
+            <a href="https://www.facebook.com" className="text-light mx-2">Facebook</a>|
+            <a href="https://www.twitter.com" className="text-light mx-2">Twitter</a>|
+            <a href="https://www.instagram.com" className="text-light mx-2">Instagram</a>
+          </div>
+          
+          {/* Rechte Spalte für Text und QR-Code */}
+          <div className="col-md-6">
+            <p>Wir würden uns über eine Bewertung freuen!</p>
+            <img src="/qr.png" alt="QR-Code" className="img-fluid" style={{ maxWidth: '100px' }} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

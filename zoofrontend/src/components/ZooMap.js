@@ -4,26 +4,20 @@ import './style.css';
 const ZooMap = () => {
   return (
     <div className="container mt-5 text-center">
-      
-      {/* Hinzugefügter Text über der Karte */}
-      <div className="alert alert-info" role="alert">
-        Die roten Punkte auf der Karte zeigen die optimalen Fotografie-Stellen an.
-      </div>
+
+      {/* Entfernter Alert-Bereich */}
 
       <div className="zoo-map-container">
-        <img src="/karte.png" alt="Zoo Karte" className="img-fluid" /> {/* Bootstrap-Klasse für responsive Images */}
+        {/* Verwenden Sie <embed> oder <iframe> für das PDF */}
+        <embed 
+          src="/Zooplan.pdf" 
+          type="application/pdf" 
+          className="img-fluid" 
+          style={{ height: "980px", width: "100%" }} 
+        />
       </div>
-    
-      <div className="zoo-map-buttons">
-        <a 
-          href="/Zooplan.pdf" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="btn btn-danger mb-3"
-        >
-          Open Zoo Plan (PDF)
-        </a>
-      </div>
+
+
     </div>
   );
 };
