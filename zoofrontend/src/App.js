@@ -25,6 +25,7 @@ const App = () => {
   return (
     <Router>
       <NavBar />
+      <div id="root" className="d-flex flex-column min-vh-100"> {/* Geändert */}
       <div className="container my-4">
         <Routes>
           <Route exact path="/" element={
@@ -82,6 +83,7 @@ const App = () => {
           <Route path="/buy-ticket" element={<BuyTicket />} />
           <Route path="/login" element={<Login />} />
         </Routes>
+      </div>
       </div>
       <Footer />
     </Router>

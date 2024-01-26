@@ -1,38 +1,14 @@
-/* Aendere die Farbe aller Links in der Anwendung zu schwarz und entferne die Unterstreichung */
 a {
-    color: rgb(0, 0, 0); /* Schwarz */
-    text-decoration: none; /* Keine Unterstreichung */
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
   }
-  
-  /* Aendere die Groesse der SVG-Icons */
+
   .bi {
-    width: 32px; /* oder eine andere Groesse nach Wunsch */
-    height: 32px; /* muss der Breite entsprechen, um das Aspect Ratio zu erhalten */
-    margin-bottom: 4px; /* Abstand nach unten */
+    width: 32px;
+    height: 32px;
+    margin-bottom: 4px; 
   }
-  
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  #root {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  
-  .container.my-4 {
-    flex: 1;
-  }
-  
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: center;
-  }
-  
+
+#root {
+    min-height: 100vh; 
+}
